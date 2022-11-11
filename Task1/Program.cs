@@ -1,16 +1,12 @@
-﻿// Напишите программу, которая на вход
-// принимает число и выдаёт его квадрат (число
-// умноженное на само себя).
-// Например:
-// 4 -> 16
-// -3 -> 9
-// -7 -> 49
-// int - 32bit
-// long - 64bit
-// Интерполяция ($"Текст {переменная}")
-
-
-Console.Write("Введите целое число: ");
-int numbers = Convert.ToInt32(Console.ReadLine());
-Console.Write($"Квадрат числа {numbers} = {numbers*numbers}");
+﻿Console.WriteLine("Введите два числа: ");
+int a = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
+if (a * a == b)
+{
+    Console.WriteLine("Является");
+}
+else
+{
+    Console.WriteLine("Не является");
+}
 
