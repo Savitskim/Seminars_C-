@@ -15,14 +15,15 @@ int ToThirdDigit(int num)
     {
         num = num / 10;
     }
-    return num = num % 10;
+    return num % 10;
 }
+if(number<0) number=-number;
 if (number > 99)
 {
     int result = ToThirdDigit(number);
     Console.WriteLine(result);
 }
-else
+else 
 {
     Console.WriteLine("третьей цифры нет");
 }

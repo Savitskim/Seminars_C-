@@ -18,6 +18,7 @@ while (IsTrue)
 {
     Console.Write("Введите трехзначное число: ");
     int number = Convert.ToInt32(Console.ReadLine());
+    if (number < 0) number = -number;
     if (number < 1000 && number > 100)
     {
         int result = SecondDigit(number);

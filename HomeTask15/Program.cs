@@ -6,7 +6,7 @@
 // 7 -> да
 // 1 -> нет
 
-Console.Write("Введите день недели: ");
+Console.Write("Введите день недели (1..7): ");
 int day = Convert.ToInt32(Console.ReadLine());
 
 bool Weekend(int week)
@@ -14,9 +14,23 @@ bool Weekend(int week)
     return week == 6 || week == 7;
 }
 
-bool result = Weekend(day);
-Console.Write($"{day} -> ");
-Console.WriteLine(result ? "Да" : "Нет");
+bool IsTrue = true;
+while (IsTrue)
+{
+    if (day > 0 && day < 8)
+    {
+        bool result = Weekend(day);
+        Console.Write($"{day} -> ");
+        Console.WriteLine(result ? "Да" : "Нет");
+        IsTrue = false;
+    }
+    else
+    {
+        Console.WriteLine("Число не попадает в допустимый диапазон!");
+        Console.Write("Введите день недели (1..7): ");
+        day = Convert.ToInt32(Console.ReadLine());
+    }
+}
 
 
 
