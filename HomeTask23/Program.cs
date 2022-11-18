@@ -8,7 +8,7 @@
 // 4 | 64
 // 5 | 125
 Console.Write("Введите число -> ");
-int n = Convert.ToInt32(Console.ReadLine());
+int n = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 void CubeTable(int number)
 {
     int start = 1;

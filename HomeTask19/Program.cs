@@ -8,7 +8,7 @@
 // 23432 -> да
 
 Console.Write("Введите пятизначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
 bool Palindrome(int num)
 {
