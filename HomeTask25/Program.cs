@@ -4,17 +4,17 @@
 // 2, 4 -> 16
 
 // Через встроенный функционал
-double Degree(double n1, double n2)
-{
-    return Math.Pow(n1, n2);
-}
+// double Degree(double n1, double n2)
+// {
+//     return Math.Pow(n1, n2);
+// }
 
-Console.WriteLine("Введите число А:");
-double a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число В (натуральное):");
-double b = Convert.ToInt32(Console.ReadLine());
-if (b < 0) Console.WriteLine("Число В не является натуральным");
-else Console.WriteLine($"{a}, {b} -> {Degree(a, b)}");
+// Console.WriteLine("Введите число А:");
+// double a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число В (натуральное):");
+// double b = Convert.ToInt32(Console.ReadLine());
+// if (b < 0) Console.WriteLine("Число В не является натуральным");
+// else Console.WriteLine($"{a}, {b} -> {Degree(a, b)}");
 
 
 // Через цикл
@@ -26,8 +26,8 @@ int b = Convert.ToInt32(Console.ReadLine());
 int Degree(int num1, int num2)
 {
     int count = 1;
-    int result = num1;
-    while (count < num2)
+    int result = 1;
+    while (count <= num2)
     {
         result = result * num1;
         count++;
