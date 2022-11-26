@@ -25,8 +25,6 @@ void PrintArray(int[] array)
     }
     Console.Write("]");
 }
-int[] array = CreateArrayRndInt(6, 100, 1000);
-PrintArray(array);
 int NumberOfEvenNumbers(int[] arr)
 {
     int count = 0;
@@ -36,5 +34,7 @@ int NumberOfEvenNumbers(int[] arr)
     }
     return count;
 }
+int[] array = CreateArrayRndInt(6, 100, 1000);
+PrintArray(array);
 int countNumber = NumberOfEvenNumbers(array);
 Console.WriteLine($" -> {countNumber}");

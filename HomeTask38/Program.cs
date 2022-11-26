@@ -28,9 +28,6 @@ void PrintArray(double[] array)
     }
     Console.Write("]");
 }
-double[] array = CreateArrayRndInt(6, -100, 100);
-PrintArray(array);
-
 double MaxElements(double[] arr)
 {
     double max = arr[0];
@@ -49,9 +46,11 @@ double MinElements(double[] arr)
     }
     return min;
 }
+double[] array = CreateArrayRndInt(6, -100, 100);
+PrintArray(array);
 double maxElement = MaxElements(array);
 double minElement = MinElements(array);
-double result = Math.Round(maxElement + minElement, 1);
+double result = Math.Round(maxElement - minElement, 1);
 if (result * 10 % 10 == 0) Console.WriteLine($" -> {result},0");
 else Console.WriteLine($" -> {result}");
 // Разница между максимальным и минимальным 
