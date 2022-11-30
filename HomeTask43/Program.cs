@@ -11,10 +11,18 @@
 double Calculating(double bx1, double kx1, double bx2, double kx2)
 {
     double x = (bx2 - bx1) / (kx1 - kx2);
-    double result = kx1 * (x) + b1;
-    return result;
+    return x;
 }
-
+double TheEquation1(double x, double bx1, double kx1, double bx2, double kx2)
+{
+    double y1 = kx1 * x + bx1;
+    return y1;
+}
+double TheEquation2(double x, double bx1, double kx1, double bx2, double kx2)
+{
+    double y2 = kx2 * x + bx2;
+    return y2;
+}
 Console.WriteLine("ЗАДАНЫ ДВЕ ПРЯМЫЕ 'y = k1 * x + b1'  и  'y = k2 * x + b2'");
 Console.WriteLine("Введите b1: ");
 double b1 = Convert.ToDouble(Console.ReadLine());
@@ -24,8 +32,9 @@ Console.WriteLine("Введите b2: ");
 double b2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите k2: ");
 double k2 = Convert.ToDouble(Console.ReadLine());
-
-double result = Math.Round(Calculating(b1, k1, b2, k2), 1, MidpointRounding.ToZero);
-Console.WriteLine($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} -> ({result};{result})");
+double x = Calculating(b1, k1, b2, k2);
+double y1 = Math.Round(TheEquation1(x, b1, k1, b2, k2), 1, MidpointRounding.ToZero);
+double y2 = Math.Round(TheEquation2(x, b1, k1, b2, k2), 1, MidpointRounding.ToZero);
+Console.WriteLine($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} -> ({y1};{y2})");
 
 
