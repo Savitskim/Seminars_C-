@@ -7,21 +7,18 @@
 // k1*x-(k2*x)=b2-b1
 // x(k1-k2)=b2-b1
 // x=(b2-b1)/(k1-k2)
-
 double Calculating(double bx1, double kx1, double bx2, double kx2)
 {
-    double x = (bx2 - bx1) / (kx1 - kx2);
-    return x;
+    return (bx2 - bx1) / (kx1 - kx2);
 }
 double TheEquation1(double x, double bx1, double kx1, double bx2, double kx2)
 {
-    double y1 = kx1 * x + bx1;
-    return y1;
+    return kx1 * x + bx1;
 }
 double TheEquation2(double x, double bx1, double kx1, double bx2, double kx2)
 {
-    double y2 = kx2 * x + bx2;
-    return y2;
+    return kx2 * x + bx2;
+
 }
 Console.WriteLine("ЗАДАНЫ ДВЕ ПРЯМЫЕ 'y = k1 * x + b1'  и  'y = k2 * x + b2'");
 Console.WriteLine("Введите b1: ");
