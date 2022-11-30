@@ -59,7 +59,7 @@ VS(myArray);
 //     }
 //     return massive;
 // }
-
+Console.ForegroundColor = ConsoleColor.Green;
 
 
 
