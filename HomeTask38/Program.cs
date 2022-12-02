@@ -10,8 +10,8 @@ double[] CreateArrayRndInt(int siz, int min, int max)
     for (int i = 0; i < array.Length; i++)
     {
         double composition;                       // Так получается более правильно работает диапазон
-        int num1 = rnd.Next(min, max);            //
-        double num2 = rnd.NextDouble();           //
+        int num1 = rnd.Next(min, max);            // 
+        double num2 = rnd.NextDouble();           // 
         if (num1 < 0) composition = num1 - num2;  //
         else composition = num1 + num2;           //
         array[i] = Math.Round(composition, 1);

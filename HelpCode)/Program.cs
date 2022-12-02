@@ -1,5 +1,6 @@
 ﻿// Проверяет массив на палиндром
-
+// Console.ForegroundColor = ConsoleColor.Green;
+// Console.BackgroundColor = ConsoleColor.Blue;
 void PrintArray(int[] array)
 {
     int count = array.Length;
@@ -59,7 +60,7 @@ VS(myArray);
 //     }
 //     return massive;
 // }
-Console.ForegroundColor = ConsoleColor.Green;
+
 
 
 
