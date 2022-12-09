@@ -77,5 +77,5 @@ void PrintMatrix(int[,] matrix)
         Console.WriteLine(" |");
     }
 }
-int[,] matrix = CreateMatrixSpiral(4, 4);
+int[,] matrix = CreateMatrixSpiral(7, 4);
 PrintMatrix(matrix);

@@ -31,9 +31,10 @@ void Print3D(int[,,] volume)
         {
             for (int k = 0; k < volume.GetLength(2); k++)
             {
-                Console.WriteLine($"{volume[i, j, k]}({i},{j},{k}) ");
+                Console.Write($"{volume[i, j, k]}({i},{j},{k}) ");
             }
         }
+        Console.WriteLine();
     }
 }
 int[,,] volume3D = CreateVolumeRndInt(2, 2, 2);
